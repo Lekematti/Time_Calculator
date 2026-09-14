@@ -47,6 +47,7 @@ fun TimeCalculatorScreen(vm: TimeVm = viewModel()) {
     Column(
         modifier = Modifier
             .fillMaxSize()
+            .systemBarsPadding()
             .padding(16.dp)
     ) {
         Row(
