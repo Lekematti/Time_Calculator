@@ -18,6 +18,12 @@ GitHub Actions
 --------------
 - .github/workflows/debug-apk.yml builds a debug APK and uploads it as an artifact.
 
+Calculation
+-----------
+- The app uses integer math: totalMinutes = hours * 60 + minutes.
+- Formatting uses integer division and modulo: hours = totalMinutes / 60, minutes = totalMinutes % 60.
+- Behavior is exact for whole-minute inputs (no floating-point rounding or "wiggle"). The app only accepts whole minutes (no seconds).
+
 Notes
 -----
 - Debug APK is signed with the debug key; good for testing only.
